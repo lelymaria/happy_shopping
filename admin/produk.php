@@ -20,13 +20,16 @@
             <td><?= $pecah['nama_produk']; ?></td>
             <td><?= $pecah['harga_produk']; ?></td>
             <td><?= $pecah['berat']; ?></td>
-            <td><?= $pecah['foto_produk']; ?></td>
             <td>
-                <a href="" class="btn btn-danger">Hapus</a>
-                <a href="" class="btn btn-warning">Ubah</a>
+                <img src="../foto_produk/<?= $pecah['foto_produk'] ?>" width="100">
+            </td>
+            <td>
+                <a href="index.php?halaman=hapusproduk&id=<?= $pecah['id_produk']; ?>" class="btn btn-danger">Hapus</a>
+                <a href="index.php?halaman=ubahproduk&id=<?= $pecah['id_produk']; ?>" class="btn btn-warning">Ubah</a>
             </td>
         </tr>
         <?php $no++; ?>
         <?php } ?>
     </tbody>
 </table>
+<a href="index.php?halaman=tambahproduk" class="btn btn-primary">Tambah Data</a>

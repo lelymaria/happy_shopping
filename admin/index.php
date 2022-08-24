@@ -76,6 +76,15 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                         } elseif ($_GET['halaman'] == "pelanggan") 
                         {
                             include 'pelanggan.php';
+                        } elseif ($_GET['halaman'] == "tambahproduk") 
+                        {
+                            include 'tambahproduk.php';
+                        }  elseif ($_GET['halaman'] == "hapusproduk")  
+                        {
+                            include 'hapusproduk.php';
+                        } elseif ($_GET['halaman'] == "ubahproduk")  
+                        {
+                            include 'ubahproduk.php';
                         }
                     } else {
                         include 'home.php';
